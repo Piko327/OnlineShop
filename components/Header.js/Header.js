@@ -1,8 +1,9 @@
-
+'use client'
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
 import { BsCartDashFill } from 'react-icons/bs'
+import { singout, singUp } from "@/utils/Auth";
 
 const Header = () => {
 
@@ -14,13 +15,14 @@ const Header = () => {
 
      <div className="flex p-2 relative"><BsCartDashFill className="text-2xl"/>
      <p  className=" bg-gray-800 text-slate-50 absolute top-1 right-12" >0</p>
-     {true ? (
+     {false ? (
         <div>
           <Image></Image>
           <p>name</p>
         </div>
       ) : (
-        <button>Sing up</button>
+  <> <button onClick={singUp}>singUp</button>
+     <button onClick={singout}>singOut</button></>
       )}
      </div>
     </section>
