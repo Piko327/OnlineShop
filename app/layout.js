@@ -1,5 +1,7 @@
+import '../app/globals.css'
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header.js/Header";
+
 
 export const metadata = {
   title: "T-Shop",
