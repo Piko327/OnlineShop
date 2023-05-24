@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Image from "next/image";
-
+import { BsCartDashFill } from 'react-icons/bs'
 const Header = () => {
 
   return (
@@ -10,9 +10,9 @@ const Header = () => {
        >T-Shop</span>
       <Navbar />
 
-<BsCartDashFill/>
-
-      {true ? (
+     <div className="flex p-2 relative"><BsCartDashFill className="text-2xl"/>
+     <p  className=" bg-gray-800 text-slate-50          absolute top-1 right-12" >0</p>
+     {true ? (
         <div>
           <Image></Image>
           <p>name</p>
@@ -20,6 +20,7 @@ const Header = () => {
       ) : (
         <button>Sing up</button>
       )}
+     </div>
     </section>
   );
 };
