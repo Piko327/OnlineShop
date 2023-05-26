@@ -11,11 +11,11 @@ const Navbar = ({ props }) => {
       <nav
         className={
           props.activeNav
-            ? "w-2/3 absolute  flex-col lg:hidden  text-center bg-slate-50 text-gray-700 left-0 top-28  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
+            ? "w-2/3 absolute  flex-col lg:hidden  text-center bg-slate-50 text-gray-600 left-0 top-28  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
             : "hidden"
         }
       >
-        <ul className=" flex-col text-2xl py-12  h-96">
+        <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-96">
           {" "}
           {[
             ["Home", "/"],
@@ -32,15 +32,18 @@ const Navbar = ({ props }) => {
             </li>
           ))}{" "}
         </ul>
-      </nav>{" "}
+      </nav>
+
+
+
       <nav className=" hidden lg:block">
-        <ul className="flex text-2xl  justify-evenly items-center">
+        <ul className="flex text-xl font-bold text-gray-600 justify-evenly items-center">
           {" "}
           {[
-            ["Home", "/"],
-            ["About us", "/About"],
-            ["Shop", "/Shop"],
-            ["Card", "/Card"],
+            ["HOME", "/"],
+            ["ABOUT US", "/About"],
+            ["SHOP", "/Shop"],
+            ["CARD", "/Card"],
           ].map(([title, url]) => (
             <li
               key={uniqid()}

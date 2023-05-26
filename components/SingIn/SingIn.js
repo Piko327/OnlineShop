@@ -33,11 +33,11 @@ const SingIn = () => {
       <p className="text-center p-1 font-bold">
       {user.displayName}</p>
     </div>
-    <button  className="text-slate-100 text-sm lg:text-lg bg-sky-500 lg:m-1 lg:my-6 my-8 rounded-3xl p-2 hover:scale-105 ease-in duration-150" 
+    <button  className="text-slate-100 text-xs lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl p-1 hover:scale-105 ease-in duration-150" 
      onClick={singOutHadler}>LOGOUT</button></>
   ) : (
     <>
-      <button  className=" text-slate-100 text-sm lg:text-lg bg-sky-500 lg:m-1 lg:my-6 my-8 rounded-3xl p-2  hover:scale-105 ease-in duration-150" 
+      <button  className=" text-slate-100 text-xs lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl p-1  hover:scale-105 ease-in duration-150" 
       onClick={singInHadler}>LOGIN</button>
     </>
   );

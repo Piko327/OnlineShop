@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <section className="px-1 py-2 flex bg-slate-50 justify-between items-center border-solid border-b-2 border-sky-500">
+    <section className="px-6 flex bg-gray-100 justify-between items-center border-solid border-b-2 border-rose-100">
       {/*Logo */}
       <span className="text-2xl italic font-bold">T-Shop</span>
 
@@ -22,17 +22,17 @@ const Header = () => {
       <div className="flex">
         <SingIn />
         <div className=" lg:flex p-2 relative items-center">
-          <BsCartDashFill className="text-2xl mt-6 lg:mt-1" size={30} />
-          <p className=" bg-gray-800 p-0.5 text-slate-50 absolute top-6 right-1">
+          <BsCartDashFill className="text-2xl mt-6 lg:mt-1" size={25} />
+          <p className=" bg-gray-900 p-0.5 text-rose-100 absolute top-6 right-1">
             0
           </p>
         </div>
         <div className="lg:hidden flex " onClick={activeNavHandler}>
    
           {activeNav ? (
-            <AiOutlineClose className="self-center ml-4 w-8 h-8 lg:hidden" />
+            <AiOutlineClose className="self-center ml-4 w-7 h-7 text-rose-950 lg:hidden" />
           ) : (
-            <AiOutlineMenu className="self-center ml-4 w-8 h-8 lg:hidden" />
+            <AiOutlineMenu className="self-center ml-4 w-7 h-7 text-rose-950  lg:hidden" />
           )}
 
         </div>
