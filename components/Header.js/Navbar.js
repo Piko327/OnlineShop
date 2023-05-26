@@ -38,9 +38,9 @@ const Navbar = ({ props }) => {
           {" "}
           {[
             ["Home", "/"],
-            ["About us", "/about"],
-            ["Shop", "/products"],
-            ["Card", "/payment"],
+            ["About us", "/About"],
+            ["Shop", "/Shop"],
+            ["Card", "/Card"],
           ].map(([title, url]) => (
             <li
               key={uniqid()}
