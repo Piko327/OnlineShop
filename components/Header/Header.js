@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <section className="px-6 flex bg-gray-100 justify-between items-center border-solid border-b-2 border-rose-100">
+    <section className="px-6 flex bg-gray-100 justify-between items-center border-solid border-b-2 border-rose-600">
       {/*Logo */}
       <span className="text-2xl italic font-bold">T-Shop</span>
 

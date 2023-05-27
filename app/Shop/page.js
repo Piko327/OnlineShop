@@ -1,14 +1,19 @@
-import DropDown from '@/components/DropDown/DropDown'
+
+'use client'
+
+import { DropDown } from '@/components/DropDown/Dropdown'
 import Products from '@/components/Products/Products'
-import React from 'react'
+import {  React,useState } from 'react'
 
 const Shop = () => {
+const [category,setCategory]=useState("")
   return (
-    <section className='bg-rose-100 '>
-    <h1 className=' font-semibold italic text-3xl pl-10 m-6  '> Shop</h1>
-<DropDown/>
+    <section className='bg-gray-200 '>
+    <h1 className=' font-semibold italic text-3xl pl-10 m-6'> Shop</h1>
+  
+<DropDown setCatagory={setCategory}/>
     <div>
-<Products/>
+<Products  category={category}/>
     </div>
     </section>
   )

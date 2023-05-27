@@ -1,6 +1,6 @@
 import '../app/globals.css'
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header.js/Header";
+import Header from "@/components/Header/Header";
 
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-rose-100'>
+      <body className='bg-gray-200'>
         <Header />
         {children}
         <Footer />
