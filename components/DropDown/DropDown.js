@@ -7,14 +7,13 @@ import { Menu } from '@headlessui/react'
 export function DropDown({setCatagory}) {
 
  
-  const catagoryTitles = ["Men","Women","Electronic","jewelery"]
+  const catagoryTitles = ["men's clothing","women's clothing","electronics","jewelery"]
 
   
   return <>
-
-<Menu>
-      <Menu.Button>Catagories</Menu.Button>
-      <Menu.Items className='bg-slate-400 p-4 flex flex-col gap-5'>
+<Menu >
+      <Menu.Button className='bg-rose-950 self-start  text-gray-100  text-right p-3 m-3 ml-10 md:ml-20'>Catagories</Menu.Button>
+      <Menu.Items className='bg-gray-100 p-4 flex flex-col  shadow-lg absolute   top-56 left-14 gap-5'>
         {catagoryTitles.map((title) => (
           /* Use the `active` state to conditionally style the active item. */
           <Menu.Item key={title} as={Fragment}>
@@ -22,7 +21,7 @@ export function DropDown({setCatagory}) {
               <span
                 onClick={()=>setCatagory(title)}
                 className={`${
-                  active ? 'bg-blue-500 text-white' : 'bg-red-400  text-black'
+                  active ? 'cursor-pointer text-gray-900' : '  text-gray-700'
                 }`}
               >
                {title}
