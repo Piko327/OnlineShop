@@ -6,9 +6,10 @@ import { BsCartDashFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SingIn from "../SingIn/SingIn";
 
+
 const Header = () => {
   const [activeNav, setActiveNav] = useState(false);
-
+ 
   const activeNavHandler = () => {
     setActiveNav(!activeNav);
   };

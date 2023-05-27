@@ -1,14 +1,12 @@
 
 export function getProducts(category,setProducts) {
-    
-
-    if(category!="")
+        if(category!="All")
     {
      fetch(`https://fakestoreapi.com/products/category/${category}`)
      .then(res=>res.json())
      .then(json=>setProducts(json))
    }
-    else
+    else 
     {
      fetch('https://fakestoreapi.com/products')
              .then(res=>res.json())

@@ -7,7 +7,7 @@ import { Menu } from '@headlessui/react'
 export function DropDown({setCatagory}) {
 
  
-  const catagoryTitles = ["men's clothing","women's clothing","electronics","jewelery"]
+  const catagoryTitles = ["men's clothing","women's clothing","electronics","jewelery","All"]
 
   
   return <>

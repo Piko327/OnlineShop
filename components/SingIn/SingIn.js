@@ -1,11 +1,13 @@
 "use client";
+
 import { app, provider } from "@/firebase-config";
 import { getAuth, signInWithPopup ,signOut} from "firebase/auth";
-import {React, useState } from "react";
+import {React,  useState } from "react";
 
 const SingIn = () => {
   const [user, setUser] = useState(null);
 
+ 
   const  singOutHadler = () => {
     const auth = getAuth(app);
   signOut(auth)

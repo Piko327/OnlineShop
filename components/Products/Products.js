@@ -1,11 +1,11 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import {React, useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { getProducts } from "@/app/api/api";
+import { getProducts } from "@/util/api/api";
 
 
 const Products = ({category}) => {
-
+ 
     const [products,setProducts]= useState([])
   useEffect(()=>{
   getProducts(category,setProducts)
