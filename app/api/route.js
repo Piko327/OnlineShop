@@ -1,14 +1,14 @@
 
-export function getProducts(category,setProducts) {
+export async function  getProducts(category,setProducts) {
         if(category!="All")
     {
-     fetch(`https://fakestoreapi.com/products/category/${category}`)
+    await fetch(`https://fakestoreapi.com/products/category/${category}`)
      .then(res=>res.json())
      .then(json=>setProducts(json))
    }
     else 
     {
-     fetch('https://fakestoreapi.com/products')
+      await fetch('https://fakestoreapi.com/products')
              .then(res=>res.json())
              .then(json=>setProducts(json))
     }

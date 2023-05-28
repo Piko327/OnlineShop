@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import { app, provider } from "@/firebase-config";
 import { getAuth, signInWithPopup ,signOut} from "firebase/auth";
 import {React,  useState } from "react";
@@ -8,7 +8,7 @@ const SingIn = () => {
   const [user, setUser] = useState(null);
 
  
-  const  singOutHadler = () => {
+  const  logoutHandler = () => {
     const auth = getAuth(app);
   signOut(auth)
     .then(() => {
@@ -26,7 +26,7 @@ const SingIn = () => {
 
   return user ? (<>
     <div className= " bg-slate-100 rounded-3xl">
-      <img className="mx-5 mt-3"
+      <Image className="mx-5 mt-3"
         src={user.photoURL}
         alt="Picture of the author"
         width={50}
@@ -36,11 +36,11 @@ const SingIn = () => {
       {user.displayName}</p>
     </div>
     <button  className="text-slate-100 text-xs  lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
-     onClick={singOutHadler}>LOGOUT</button></>
+     onClick={logoutHandler}>LOGOUT</button></>
   ) : (
     <>
       <button  className=" text-slate-100 text-xs lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
-      onClick={singInHadler}>LOGIN</button>
+      onClick={singInHadler}>SINGIN</button>
     </>
   );
 };
