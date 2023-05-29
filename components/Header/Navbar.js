@@ -16,12 +16,10 @@ const Navbar = ({ props }) => {
         }
       >
         <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-96">
-          {" "}
           {[
-            ["Home", "/"],
-            ["About us", "/about"],
-            ["Shop", "/products"],
-            ["Card", "/payment"],
+            ["HOME", "/"],
+            ["ABOUT US", "/About"],
+            ["SHOP", "/Shop"],,
           ].map(([title, url]) => (
             <li
               onClick={() => props.activeNavHandler()}
@@ -43,7 +41,6 @@ const Navbar = ({ props }) => {
             ["HOME", "/"],
             ["ABOUT US", "/About"],
             ["SHOP", "/Shop"],
-            ["CARD", "/Card"],
           ].map(([title, url]) => (
             <li
               key={uniqid()}

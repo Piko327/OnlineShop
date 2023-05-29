@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { AiFillStar } from 'react-icons/ai';
+import Link from 'next/link';
 const ProductCard = ({product}) => {
   return (
 
@@ -8,7 +9,14 @@ const ProductCard = ({product}) => {
         <Image width={250} height={250} alt='p' className='object-contain min-h-[60%] max-h-60 min-w-[70%] ' src={product.image} />
         <h2 className='text-gray-900 font-bold leading-6  text-xl text-center flex '>{product.title.substring(0,25)}</h2>
         <span className='text-1xl italic font-bold pb-2 text-gray-800'>{product.price}</span>
-        <button className='border-solid border-rose-950 bg-rose-100  text-rose-950 border-2 px-1 py-2 mb-5 hover:scale-105 duration-200'>Add in Card </button>
+
+   <div className='flex w-full justify-around place-items-center '>
+        <button className='border-solid w-1/3  h-12 border-rose-900 bg-rose-100  text-rose-950 border-2  hover:scale-105 duration-200'>Add in Card </button>
+      <Link searchParams={product} className='border-solid  w-1/3  h-12 border-rose-950 text-rose-100  bg-rose-950 border-2 text-center pt-3  hover:scale-105 duration-200' href={{
+        pathname:`Shop/product/${product.id}`,
+        product:{product}
+      }}> Details</Link>
+        </div>
         <div className='flex gap-1 self-start'>
           <AiFillStar/>
           <AiFillStar/>
