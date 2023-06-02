@@ -11,7 +11,7 @@ const Navbar = ({ props }) => {
       <nav
         className={
           props.activeNav
-            ? "w-2/3 absolute  flex-col lg:hidden  text-center bg-slate-50 text-gray-600 left-0 top-28  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
+            ? "w-2/3 absolute z-50 flex-col lg:hidden  text-center bg-slate-50 text-gray-600 left-0 top-28  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
             : "hidden"
         }
       >
@@ -28,7 +28,7 @@ const Navbar = ({ props }) => {
             >
               <Link href={url}>{title}</Link>
             </li>
-          ))}{" "}
+          ))}
         </ul>
       </nav>
 
@@ -36,7 +36,7 @@ const Navbar = ({ props }) => {
 
       <nav className=" hidden lg:block">
         <ul className="flex text-xl font-bold text-gray-600 justify-evenly items-center">
-          {" "}
+          
           {[
             ["HOME", "/"],
             ["ABOUT US", "/About"],
@@ -48,7 +48,7 @@ const Navbar = ({ props }) => {
             >
               <Link href={url}>{title}</Link>
             </li>
-          ))}{" "}
+          ))}
         </ul>
       </nav>
     </>
