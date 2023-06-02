@@ -12,7 +12,7 @@ const Products = ({category}) => {
   },[category]);
 
 
-  return <div className=' flex gap-14 px-10 flex-wrap justify-center'>
+  return <div className=' flex gap-20 px-10 flex-wrap justify-center'>
 
     {products.map((product)=><ProductCard key={product.id} product={product}/>)}
   </div>;

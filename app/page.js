@@ -1,11 +1,10 @@
 import Baner from "@/components/Baner/Baner";
-import FutureProducts from "@/components/Products/FutureProducts";
-import Products from "@/components/Products/Products";
+import TrendingProducts from "@/components/Products/TrendingProducts";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <selection>
+    <div>
       <div className="mb-[60vh]">
      
         <Baner />
@@ -19,9 +18,9 @@ export default function Home() {
         </Link>
       </div>
 
-<FutureProducts/>
+<TrendingProducts/>
 
     
-    </selection>
+    </div>
   );
 }

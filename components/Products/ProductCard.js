@@ -5,8 +5,8 @@ import Link from 'next/link';
 const ProductCard = ({product}) => {
   return (
 
-    <div className='shadow-md hover:scale-105 duration-200 bg-white rounded-lg max-w-sm flex  flex-col px-5 justify-around items-center '>
-        <Image width={200} height={200} alt='p' className='object-contain min-h-[40%] max-h-40  min-w-[40%] lg:max-h-60 ' src={product.image} />
+    <div className='shadow-md hover:scale-105 duration-200 bg-white rounded-lg max-w-sm flex  flex-col px-4 justify-around items-center '>
+        <Image width={200} height={200} alt='p' className='object-contain min-h-[40%] max-h-40 p-4 min-w-[40%] lg:max-h-60 ' src={product.image} />
         <h2 className='text-gray-900 font-bold leading-6  text-xl text-center flex '>{product.title.substring(0,25)}</h2>
         <span className='text-1xl italic font-bold pb-2 text-gray-800'>{product.price}</span>
 
