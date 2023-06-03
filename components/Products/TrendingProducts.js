@@ -29,13 +29,13 @@ const FutureProducts = () => {
   };
 
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 ">
       <h1 className="text-gray-800 italic font-bold sans text-3xl px-10  mb-14 ml-10 sm:ml-40 lg:ml-96">
         Trending Products
       </h1>
       <Swiper
         className="w-4/6 my-10"
-        modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
+        modules={[Navigation, Pagination,Scrollbar , Autoplay, A11y]}
         spaceBetween={40}
         slidesPerView={sliderPerView(width)}
         speed={100}

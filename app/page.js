@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="mb-[60vh]">
+      <div className="mb-[70vh]">
      
         <Baner />
         <h1 className="text-3xl   sm:text-5xl p-2  text-gray-300 border-2 font-bold relative  text-center z-30 top-40 mx-6 lg:text-6xl">
@@ -17,9 +17,9 @@ export default function Home() {
           Shop now
         </Link>
       </div>
-
+<div className="">
 <TrendingProducts/>
-
+</div>
     
     </div>
   );
