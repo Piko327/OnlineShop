@@ -1,7 +1,7 @@
 'use client'
 import {React, useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
-import { getProducts } from "@/app/api/route";
+import { getProducts } from "@/app/api/getData/route";
 
 
 const Products = ({category}) => {

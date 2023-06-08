@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   images:{
-    domains:["fakestoreapi.com","lg3.googleusercontent.com"],
+    domains:["fakestoreapi.com","lh3.googleusercontent.com"],
 }};
  
 module.exports = nextConfig;

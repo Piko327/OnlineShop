@@ -1,7 +1,7 @@
-import '../app/globals.css'
+import "../app/globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import AuthProvider from '../util/context/AuthProvider';
+import Provider from "@/providers/authProvider";
 
 export const metadata = {
   title: "T-Shop",
@@ -11,10 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='bg-gray-200'>
-        <Header />
-        <AuthProvider>{children}</AuthProvider>
-        <Footer />
+      <body className="bg-gray-200">
+   <Provider>
+          <Header />
+          <>{children}</>
+          <Footer />
+          </Provider>
       </body>
     </html>
   );
