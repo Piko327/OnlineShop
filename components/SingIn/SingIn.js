@@ -5,20 +5,20 @@ import { signIn ,signOut, useSession} from 'next-auth/react';
 import { BsSignIntersection } from 'react-icons/bs';
 
 const SingIn = () => {
- const session=useSession()
+ const {data}=useSession()
 
 
-  return session.data ? (<>
+  return data ? (<>
     <div className= " bg-slate-100 rounded-3xl">
       <Image className="mx-5 mt-3"
-        src={session.data.user.image}
+        src={data.user.image}
         alt="Picture of the author"
         width={50}
         height={40}
       />
       <p className="text-center p-1 font-bold">
         {
-          session.data.user.name
+          data.user.name
         }
       </p>
     </div>
