@@ -1,10 +1,9 @@
 
-import DetailCard from "@/components/Products/DetailCard";
+
+import DetailCard from "@/components/DetailCard/DetailCard";
 import React from "react";
 
 const page = async (props) => {
-
-
   const productData = await fetch(
     `https://fakestoreapi.com/products/${props.params.id}`
   ).then((res) => res.json());

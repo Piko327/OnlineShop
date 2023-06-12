@@ -11,20 +11,20 @@ const SingIn = () => {
       <Image className="mx-5 mt-3"
         src={data.user.image}
         alt="Picture of the author"
-        width={50}
-        height={40}
+        width={30}
+        height={20}
       />
-      <p className="text-center p-1 font-bold">
+      <p className="text-center p-1  font-bold">
         {
           data.user.name
         }
       </p>
     </div>
-    <button  className="text-slate-100 text-xs  lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
+    <button  className="text-slate-100 text-xs   bg-rose-950 lg:m-1 lg:my-4 my-5 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
      onClick={()=>signOut()}>LOGOUT</button></>
   ) : (
     <>
-      <button  className=" text-slate-100 text-xs lg:text-lg bg-rose-950 lg:m-1 lg:my-6 my-8 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
+      <button  className="text-slate-100 text-xs   bg-rose-950 lg:m-1 lg:my-4 my-5 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150" 
       onClick={()=>signIn()}>SINGIN</button>
     </>
   );

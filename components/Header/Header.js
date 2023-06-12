@@ -21,7 +21,7 @@ const Header = () => {
       <Link  href="/"className="text-2xl italic font-bold">T-Shop</Link>
 
       <Navbar props={{ activeNav, activeNavHandler }} />
-      <div className="flex">
+      <div className="flex h-16">
         <SingIn />
         <div className=" lg:flex p-2 relative items-center">
           <BsCartDashFill className="text-2xl mt-6 lg:mt-1" size={25} />

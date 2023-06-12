@@ -16,27 +16,22 @@ const Navbar = ({ props }) => {
         }
       >
         <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-96">
-          {[
-            ["HOME", "/"],
-            ["ABOUT US", "/About"],
-            ["SHOP", "/Shop"],,
-          ].map(([title, url]) => (
-            <li
-              onClick={() => props.activeNavHandler()}
-              key={uniqid()}
-              className="m-2 p-2 border-solid border-b-2 border-gray-200 hover:text-gray-900 ease-in duration-150"
-            >
-              <Link href={url}>{title}</Link>
-            </li>
-          ))}
+          {[["HOME", "/"], ["ABOUT US", "/About"], ["SHOP", "/Shop"], ,].map(
+            ([title, url]) => (
+              <li
+                onClick={() => props.activeNavHandler()}
+                key={uniqid()}
+                className="m-2 p-2 border-solid border-b-2 border-gray-200 hover:text-gray-900 ease-in duration-150"
+              >
+                <Link href={url}>{title}</Link>
+              </li>
+            )
+          )}
         </ul>
       </nav>
 
-
-
       <nav className=" hidden lg:block">
-        <ul className="flex text-xl font-bold text-gray-600 justify-evenly items-center">
-          
+        <ul className="flex  font-bold text-gray-600 justify-evenly items-center">
           {[
             ["HOME", "/"],
             ["ABOUT US", "/About"],

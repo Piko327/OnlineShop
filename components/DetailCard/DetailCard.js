@@ -4,7 +4,6 @@ import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 
 const DetailCard = ({product}) => {
-    console.log(product)
   return (
     <div>  <div className="flex">
     
