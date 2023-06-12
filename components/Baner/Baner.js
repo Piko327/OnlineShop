@@ -1,8 +1,10 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 
 
 const Baner = () => {
+ 
   return (
 
 <div className='absolute w-full h-2/3 z-0'> 

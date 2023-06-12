@@ -6,8 +6,6 @@ import { BsSignIntersection } from 'react-icons/bs';
 
 const SingIn = () => {
  const {data}=useSession()
-
-
   return data ? (<>
     <div className= " bg-slate-100 rounded-3xl">
       <Image className="mx-5 mt-3"

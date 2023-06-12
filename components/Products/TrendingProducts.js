@@ -7,15 +7,12 @@ import ProductCard from "./ProductCard";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import { useSelector } from "react-redux";
 const FutureProducts = () => {
   const { width } = useWindowSize();
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products?limit=5")
-      .then((res) => res.json())
-      .then((json) => setProducts(json));
-  }, []);
 
+  const products = useSelector(state => state.products.value);
+  console.log(products)
   const sliderPerView = (width) => {
     if (width < 700) {
       return 1;
