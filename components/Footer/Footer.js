@@ -6,7 +6,12 @@ import {
   AiFillTwitterSquare,
 } from "react-icons/ai";
 
+
+
 const Footer = () => {
+
+  const titleStyle="py-2 font-bold text-base italic "
+
   return (<div className="bg-rose-950 text-gray-300">
     <div className="flex  items-center gap-5 flex-wrap mx-10 justify-around  pt-3 px-10 md:px-28   md:text-lg ">
    <div className=" md:w-1/4">
@@ -19,7 +24,7 @@ const Footer = () => {
      </p>
    </div>
       <div>
-        <h1 className="py-2 font-bold text-base italic">CATEGORIES</h1>
+        <h1 className={titleStyle}>CATEGORIES</h1>
         <ul className="text-gray-400 flex  text-sm flex-col gap-1" >
           <li>Men</li>
           <li>Women</li>
@@ -28,15 +33,15 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h1 className="py-2 font-bold text-base italic">LINKS</h1>
+        <h1 className={titleStyle}>LINKS</h1>
         <ul className="text-gray-400 flex text-sm   flex-col gap-1">
           <li>Home</li>
           <li>Shop</li>
           <li>About Us</li>
         </ul>
       </div>
-      <div className="">
-        <h1 className="py-2 text-base font-bold italic">FOLLOW US</h1>
+      <div >
+        <h1 className={titleStyle}>FOLLOW US</h1>
         <ul className="text-gray-400 flex gap-3 text-2xl justify-between items-center" >
           <li >
            <Link href="https://www.facebook.com/profile.php?id=100007746210819"> <AiFillFacebook /></Link>

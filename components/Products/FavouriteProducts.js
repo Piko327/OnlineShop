@@ -9,7 +9,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { useSelector } from "react-redux";
-const TrendingProducts = () => {
+const FavouriteProducts = () => {
   const { width } = useWindowSize();
 
   const products = useSelector((state) => state.products.value);
@@ -29,15 +29,15 @@ const TrendingProducts = () => {
   return (
     <div className="bg-gray-200 ">
       <h1 className="text-gray-800 italic font-bold sans text-2xl px-10  mb-14 ml-10 sm:ml-40 lg:ml-96">
-        Trending Products
+    Our Favourites
       </h1>
       <Swiper
         className="w-4/6 my-10"
         modules={[Navigation, Pagination, Scrollbar, Autoplay, A11y]}
         spaceBetween={40}
         slidesPerView={sliderPerView(width)}
-        speed={300}
-        autoplay={{ delay: 4000 }}
+        speed={400}
+        autoplay={{ delay: 3000 }}
       >
         |
         <div>
@@ -52,4 +52,4 @@ const TrendingProducts = () => {
   );
 };
 
-export default TrendingProducts;
+export default FavouriteProducts;

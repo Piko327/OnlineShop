@@ -1,17 +1,22 @@
 
-
+'use client'
 import DetailCard from "@/components/DetailCard/DetailCard";
+import TrendingProducts from "@/components/Products/TrendingProducts";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const page = async (props) => {
-  const productData = await fetch(
-    `https://fakestoreapi.com/products/${props.params.id}`
-  ).then((res) => res.json());
+  const product = useSelector(state=>state.products.value)
+  .filter(p=>p.id==props.params.id)[0]
 
-  
 
-  return (
-  <DetailCard product={productData}/>
+
+  return (<div>
+      <DetailCard product={product}/>
+
+      <TrendingProducts/>
+  </div>
+
   );
 };
 
