@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import { AiFillStar } from "react-icons/ai";
+import React, { useState } from "react";
+import { AiFillStar, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const DetailCard = ({ product }) => {
+
+  const [quantity,setQuantity]=useState(1)
   return (
     <div >
    
@@ -27,6 +29,11 @@ const DetailCard = ({ product }) => {
           </span>
           <div className="flex w-full justify-around place-items-center "></div>
           <div className=" w-2/3 text-gray-700">{product.description}</div>
+          <div className="flex gap-2">
+           <AiOutlinePlus onClick={()=>setQuantity((prev)=>prev+1)} className="bg-gray-300 hover:scale-105 duration-200  text-3xl "/>
+           <span className=" text-xl">{quantity}</span>
+           <AiOutlineMinus onClick={()=>setQuantity((prev)=>prev===1?1:prev-1)}  className="bg-gray-300 hover:scale-105 duration-200 text-3xl "/>
+          </div>
           <div className="flex gap-1 self-start">
             <AiFillStar />
             <AiFillStar />
