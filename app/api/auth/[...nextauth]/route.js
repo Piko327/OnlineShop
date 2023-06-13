@@ -8,9 +8,10 @@ export const  authOptions={
           clientSecret:process.env.GOOGLE_CLIENT_SECRET
         })
       ],
-      pages:
-      {
-        
+      callbacks: {
+        async redirect({ url, baseUrl }) {
+     return "http://localhost:3000"
+        }
       }
 }
 const handler=NextAuth(authOptions)
