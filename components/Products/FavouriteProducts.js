@@ -1,19 +1,18 @@
 "use client";
-import uniqid from 'uniqid';
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
-import useWindowSize from "use-window-size-v2";
 import ProductCard from "../ProductCard/ProductCard";
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { useSelector } from "react-redux";
+import useWindowDimensions from "@/hooks/useWindowDimension";
+
 const FavouriteProducts = () => {
-  const { width } = useWindowSize();
+  const { width, height } = useWindowDimensions();
 
   const products = useSelector((state) => state.products.value);
-
   const sliderPerView = (width) => {
     if (width < 700) {
       return 1;
@@ -23,7 +22,8 @@ const FavouriteProducts = () => {
       return 3;
     } else if (width > 1600) {
       return 4;
-    }
+    }else
+    {return 2}
   };
 
   return (
