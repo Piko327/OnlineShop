@@ -41,12 +41,8 @@ const ProductCard = ({ product }) => {
           Add in Card
         </button>
         <Link
-          searchParams={product}
           className="border-solid h-full w-14 pt-2 border-rose-950 text-rose-100  bg-rose-950 border-2 text-center hover:scale-105 duration-200"
-          href={{
-            pathname: `Shop/product/${product.id}`,
-            product: { product },
-          }}
+          href={`Shop/product/${product.id}`}
         >
           Details
         </Link>

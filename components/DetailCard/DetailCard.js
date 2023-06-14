@@ -65,7 +65,7 @@ const DetailCard = ({ product }) => {
             onClick={addToCardHadler}
             className="border-solid sm:w-1/3 h-8 mb-5  border-rose-900 bg-rose-100  text-rose-950 border-2  hover:scale-105 duration-200"
           >
-            Add in Card{" "}
+            Add in Card
           </button>
         </div>
       </div>

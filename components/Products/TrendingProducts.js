@@ -1,4 +1,3 @@
-
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
@@ -41,7 +40,7 @@ const TrendingProducts = () => {
         |
         <div>
           {products.map((product) => (
-            <SwiperSlide key={product.id}  >
+            <SwiperSlide key={product.id}>
               <ProductCard product={product} />
             </SwiperSlide>
           ))}
