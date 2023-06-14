@@ -2,7 +2,7 @@
 import { Fragment } from "react";
 import { Menu } from "@headlessui/react";
 
-export function DropDown({ setCatagory }) {
+export function Dropdown({ setCatagory }) {
   const catagoryTitles = [
     "men's clothing",
     "women's clothing",
