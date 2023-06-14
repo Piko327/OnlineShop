@@ -1,5 +1,4 @@
-"use client";
-import uniqid from 'uniqid';
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper";
@@ -42,8 +41,8 @@ const TrendingProducts = () => {
         |
         <div>
           {products.map((product) => (
-            <SwiperSlide virtualIndex={product.id}>
-              <ProductCard key={uniqid()} product={product} />
+            <SwiperSlide key={product.id}  >
+              <ProductCard product={product} />
             </SwiperSlide>
           ))}
         </div>
