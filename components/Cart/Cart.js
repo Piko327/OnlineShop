@@ -1,25 +1,33 @@
+"use client";
+import { removeOrder, resetAllOrder } from "@/app/redux/features/orders";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiOutlineDelete } from "react-icons/ai";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
-  const products = useSelector((state) => state.products.value).filter(
-    (x) => x.id > 18
-  );
+  const orders = useSelector((state) => state.orders.orders);
+  const dispach = useDispatch();
+
+  const totalPrice = orders.reduce((accumulator, order) => {
+    return accumulator +order.quantity*order.price;
+  }, 0);
+  
   return (
-    <div className="absolute z-50 right-5 top-16 bg-slate-200 rounded-sm ">
+    <div className="absolute z-50 right-5  top-16 bg-slate-200 rounded-sm  ">
       <h1 className="m-2 font-semibold text-lg ">Products in your cart</h1>
-      {products.length == 0 ? (
-        <div className="p-10">Not Product in your cart</div>
+      {orders?.length == 0 ? (
+        <div className="px-16 py-6 italic text-xl ">Not Product in your cart</div>
       ) : (
         <div className="px-4">
-          {products.map((product) => (
+          {orders?.map((product) => (
             <div
               key={product.id}
-              className="flex  border-zinc-400 max-h-28 border-solid border-b-2 mb-2"
+              className="flex  border-zinc-400 max-h-28  border-solid border-b-2 mb-2"
             >
               <Image
+                alt="orderImg"
                 width={40}
                 height={5}
                 src={product.image}
@@ -32,16 +40,34 @@ const Cart = () => {
                   {product.description.substring(0, 40)}
                 </span>
               </div>
-              <AiOutlineDelete className="text-rose-600  text-xl" />
+              <div className="flex flex-col justify-around items-center">
+                <AiOutlineDelete
+                  className="text-rose-600  text-xl"
+                  onClick={() => dispach(removeOrder(product.id))}
+                />
+                <p className="bg-gray-100 font-semibold ">{product.quantity}</p>
+              </div>
             </div>
           ))}
         </div>
       )}
+
       <div className="flex text-sm m-3  justify-between">
-        <div className=" text-sm text-rose-950 font-bold">
+        <button
+          onClick={() => dispach(resetAllOrder())}
+          className=" text-sm text-rose-950 font-bold"
+        >
           Clean All Orders
+        </button>
+        <div className="font-bold">
+          <span className="text-lg  font-semibold">Total:</span> ${totalPrice.toFixed(2)}
         </div>
-        <div>Total Price:BGN:{"400"}</div>
+      </div>
+      <div className="m-3 border-solid w-2/4 py-1  border-rose-900 bg-rose-100  text-rose-950 border-2  hover:scale-105 duration-200">
+        {" "}
+        <Link href={"/"} className=" ">
+          PROCEED TO CHECKOUT
+        </Link>
       </div>
     </div>
   );

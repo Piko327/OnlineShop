@@ -7,10 +7,12 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import SingIn from "../SingIn/SingIn";
 import Link from "next/link";
 import Cart from "../Cart/Cart";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState(false);
   const [activeCart, setActiveCart] = useState(false);
+  const orders=useSelector(state=>state.orders.orders)
   const activeNavHandler = () => {
     setActiveNav(!activeNav);
   };
@@ -38,7 +40,7 @@ const Header = () => {
             onClick={activeCartHandler}
             className=" bg-gray-900 p-0.5 text-rose-100 absolute top-3 right-2"
           >
-            0
+          {orders.length}
           </p>
         </div>
         <div className="lg:hidden flex " onClick={activeNavHandler}>
