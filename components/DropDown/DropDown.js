@@ -11,8 +11,7 @@ export function DropDown({ setCatagory }) {
     "All",
   ];
 
-  return (
-    <>
+  return (<div>
       <Menu>
         <Menu.Button className="bg-rose-950 self-start  text-gray-100  text-right p-2 m-2 ml-10 md:ml-20">
           Catagories
@@ -35,6 +34,6 @@ export function DropDown({ setCatagory }) {
           ))}
         </Menu.Items>
       </Menu>
-    </>
+    </div>
   );
 }
