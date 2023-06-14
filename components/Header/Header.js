@@ -19,9 +19,9 @@ const Header = () => {
   const activeCartHandler = () => {
     setActiveCart(!activeCart);
   };
-  const btnStyle = "self-center ml-4 w-7 h-7 text-rose-950 lg:hidden";
+  const btnStyle = "self-center ml-4 w-7 h-7 text-rose-950   lg:hidden";
   return (
-    <section className="px-6 flex bg-gray-100 justify-between items-center border-solid border-b-2 border-rose-600">
+    <section className="px-6 flex bg-gray-100 justify-between  sticky top-0 w-full z-50 items-center border-solid border-b-2 border-rose-600">
       {/*Logo */}
       <Link href="/" className="text-2xl italic font-bold">
         T-Shop
