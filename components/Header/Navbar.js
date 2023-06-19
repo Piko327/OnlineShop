@@ -11,11 +11,11 @@ const Navbar = ({ props }) => {
       <nav
         className={
           props.activeNav
-            ? "w-2/3 absolute z-50 flex-col lg:hidden  text-center bg-slate-50 text-gray-600 left-0 top-28  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
+            ? "w-2/3 absolute  z-50 flex-col  lg:hidden   bg-slate-50 text-gray-600 right-0 top-14  shadow-md border-solid border-b-2 border-r-2 border-gray-400"
             : "hidden"
         }
       >
-        <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-96">
+        <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-full">
           {[
             ["HOME", "/"],
             ["ABOUT US", "/About"],

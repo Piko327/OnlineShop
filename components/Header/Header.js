@@ -38,7 +38,7 @@ const Header = () => {
           />
           <p
             onClick={activeCartHandler}
-            className=" bg-gray-900 p-0.5 text-rose-100 absolute top-3 right-2"
+            className=" bg-gray-900 p-0.5 text-rose-100 absolute top-5 md:top-3 right-2"
           >
           {orders.length}
           </p>
