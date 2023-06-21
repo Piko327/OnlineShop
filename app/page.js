@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       <div className="mb-[50vh]">
-        <Baner />
+        <Baner src="/asset/BanerImg.jpg"  />
         <h1 className="text-2xl   lg:text-4xl p-2  text-gray-300 border-2 font-bold relative  text-center z-30 top-20 ms:top-40 mx-6 ">
           ORDER NOW FOR THE LATEST TRENDS
         </h1>
@@ -33,12 +33,13 @@ export default function Home() {
           Shop now
         </Link>
       </div>
-      <div className="">
-        <TrendingProducts />
-      </div>
       <div>
         <FavouriteProducts />
       </div>
+      <div >
+        <TrendingProducts />
+      </div>
+  
     </div>
   );
 }

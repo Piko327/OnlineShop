@@ -15,7 +15,7 @@ const Navbar = ({ props }) => {
             : "hidden"
         }
       >
-        <ul className=" flex-col  text-xl font-boldtext-2xl py-12  h-full">
+        <ul className=" flex-col  text-md  py-5  h-full">
           {[
             ["HOME", "/"],
             ["ABOUT US", "/About"],

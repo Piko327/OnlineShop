@@ -27,8 +27,8 @@ const TrendingProducts = () => {
   };
 
   return (
-    <div className="bg-gray-200 mt-10 ">
-      <h1 className="text-gray-800 italic font-bold sans text-2xl px-10  mb-14 ml-10 sm:ml-40 lg:ml-96">
+    <div className="bg-gray-200 py-5  ">
+      <h1 className="text-gray-800 italic font-bold sans text-2xl px-10   ml-14 sm:ml-40 lg:ml-96">
         Trending Products
       </h1>
       <Swiper
@@ -39,10 +39,10 @@ const TrendingProducts = () => {
         speed={300}
         autoplay={{ delay: 4000 }}
       >
-        |
+        
         <div>
           {products.map((product) => (
-            <SwiperSlide key={product.id}>
+            <SwiperSlide className="p-4" key={product.id}>
               <ProductCard product={product} />
             </SwiperSlide>
           ))}

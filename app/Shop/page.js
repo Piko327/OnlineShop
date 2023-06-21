@@ -1,21 +1,27 @@
-
-'use client'
-import  Dropdown  from '@/components/DropDown/Dropdown'
-import Products from '@/components/Products/Products'
-import {  React,useState } from 'react'
+"use client";
+import Baner from "@/components/Baner/Baner";
+import Dropdown from "@/components/DropDown/Dropdown";
+import Products from "@/components/Products/Products";
+import { React, useState } from "react";
 
 const Shop = () => {
-const [category,setCategory]=useState("All")
+  const [category, setCategory] = useState("All");
   return (
-    <div className='bg-gray-200  flex flex-col min-h-[70vh] '>
-    <h1 className='font-bold italic ml-40  text-3xl pl-10 m-6'>Shop</h1>
+    <>   <Baner src="/asset/backgroundShop.jpg" />
+    <div className="bg-gray-200  flex flex-col min-h-[70vh] mt-96  ">
   
-<Dropdown setCatagory={setCategory}/>
+      <h2 className="absolute top-40 right-10  z-20 text-center backdrop-blur-xl text-rose-900 border-red-100 border-solid border-2 p-5 m-3  text-2xl  font-bold italic">
+        Discover the Thrills of Online Shopping:
+         Your Gateway to Unforgettable
+        Finds!
+      </h2>
 
-<Products  category={category}/>
-    
+      <Dropdown setCatagory={setCategory} />
+
+      <Products category={category} />
     </div>
-  )
-}
+    </>
+  );
+};
 
-export default Shop
+export default Shop;

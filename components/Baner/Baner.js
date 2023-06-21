@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 
-const Baner = () => {
+const Baner = ({src}) => {
  
   return (
 
@@ -12,7 +12,7 @@ const Baner = () => {
   width={1400}  //use the width of the image being used
   height={1000} //use the height of the image being used
   alt="water_portrait"
-  src="/asset/BanerImg.jpg" //image saved in public/home
+  src={src} //image saved in public/home
 />
 </div>
   )

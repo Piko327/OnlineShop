@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
         ${product.price}
       </span>
 
-      <div className="flex w-full justify-around place-items-center ">
+      <div className="flex w-full justify-around place-items-center  mb-3">
         <button
           onClick={addToCardHadler}
           className=" w-16 border-solid  border-rose-900 bg-rose-100  text-rose-950 border-2  hover:scale-105 duration-200"
