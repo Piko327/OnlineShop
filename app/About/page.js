@@ -1,12 +1,12 @@
+import MotionProvider from "@/providers/motionProvider";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="px-10  md:px-20  text-gray-800 p-5 md:p5">
-    
-      <div className="flex flex-col gap-10 italic p-10 ">
-      <h2 className="text-xl font-semibold text-gray-900 ">Welcome to T-Shop!</h2>
-      <span >
+    <MotionProvider>
+    <div className="px-10  md:px-20  text-gray-800 min-h-[60vh] p-5">
+      <h2 className="text-2xl font-semibold text-gray-900 m-5 ">Welcome to T-Shop!</h2>
+     <div className=" mt-10 text-xl flex flex-col gap-10 "> <span >
         At T-Shop, we are passionate about providing you with the finest
         selection of trendy and high-quality T-shirts. We believe that your
         wardrobe should reflect your unique personality and style, and what
@@ -28,10 +28,12 @@ const page = () => {
         and longevity in every garment.
       </span>
       </div>
+      </div>
       
       
     
-    </div>
+    
+    </MotionProvider>
   );
 };
 
