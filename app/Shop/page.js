@@ -15,7 +15,7 @@ const Shop = () => {
           Discover the Thrills of Online Shopping: Your Gateway to Unforgettable
           Finds!
         </h2>
-        <div className="bg-gray-200  flex flex-col min-h-[70vh] mt-64  ">
+        <div className="bg-gray-200  flex flex-col min-h-[70vh] mt-72  ">
           <Dropdown setCatagory={setCategory} />
 
           <Products category={category} />
