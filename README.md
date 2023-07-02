@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# T-Shop
 
-## Getting Started
+T-Shop is an e-commerce site built using Next.js, React, Redux, and JavaScript. It utilizes the Fake Store API to retrieve product data and provides a seamless shopping experience. The web app features a trading products homepage, a shopping page with categories, and an about page. Authentication is implemented using NextAuth.js for secure user access.
 
-First, run the development server:
+## Technologies
+The T-Shop web app is built with the following technologies:
+- Next.js: A React framework for building server-rendered applications.
+- React: A popular JavaScript library for building user interfaces.
+- Redux: A predictable state container for managing application state.
+- JavaScript: The programming language used for the web app's logic.
+- Tailwind CSS: A utility-first CSS framework for styling the user interface.
+- NextAuth.js: A flexible authentication library for Next.js applications.
+- Swiper: A mobile touch slider and framework for creating responsive carousels and sliders.
+- Fake Store API: An API used to retrieve product data for the e-commerce functionality.
+- Vercel: A cloud platform for deploying and hosting web applications.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Usage
+Once you have the T-Shop web app running, you can explore the following functionalities:
+- Browse the trading products on the homepage.
+- Navigate to the shopping page and explore products by categories.
+- Learn more about the T-Shop project on the about page.
+- Sign in or create an account to access additional features.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+The T-Shop web app is deployed and hosted on Vercel. You can access it online by visiting the following URL:
+[https://online-shop-brown.vercel.app/](https://online-shop-brown.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+For any questions, feedback, or support related to the T-Shop web app, you can reach out to the project maintainer at fikii.business@gmail.com.
