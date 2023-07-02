@@ -6,7 +6,9 @@
 <img src="https://drive.google.com/uc?export=view&id=1NswyLCHGZhLko1weDyeOMaNj6dC13yfe" width="250" alt="Image 3">
 <img src="https://drive.google.com/uc?export=view&id=1iW7V0XoyAv-9_JnfvffptJnVIX2qaRfN" width="250" alt="Image 4">
 </div>
-T-Shop is an e-commerce site built using Next.js, React, Redux, and JavaScript. It utilizes the Fake Store API to retrieve product data and provides a seamless shopping experience. The web app features a trading products homepage, a shopping page with categories, and an about page. Authentication is implemented using NextAuth.js for secure user access.
+T-Shop is an e-commerce site built using Next.js, React, Redux, and JavaScript. It utilizes the Fake Store API to retrieve product data and provides a seamless shopping experience. The web app features a trading products homepage, a shopping page with categories, and an about page. Authentication is implemented using NextAuth.js for secure user access.### Responsive Design
+T-Shop is built with responsive design in mind.Feel free to explore the web app's functionalities and test its responsiveness on different devices. Your feedback is valuable in further improving the user experience.
+
 
 ## Technologies
 The T-Shop web app is built with the following technologies:
