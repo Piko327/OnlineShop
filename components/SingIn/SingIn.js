@@ -27,7 +27,7 @@ const SingIn = () => {
   ) : (
     <>
       <button className={btnStyle} onClick={signIn}>
-        SINGIN
+        SING IN
       </button>
     </>
   );
