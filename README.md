@@ -6,32 +6,37 @@
 <img src="https://drive.google.com/uc?export=view&id=1NswyLCHGZhLko1weDyeOMaNj6dC13yfe" width="250" alt="Image 3">
 <img src="https://drive.google.com/uc?export=view&id=1iW7V0XoyAv-9_JnfvffptJnVIX2qaRfN" width="250" alt="Image 4">
 </div>
-T-Shop is an e-commerce site built using Next.js, React, Redux, and JavaScript. It utilizes the Fake Store API to retrieve product data and provides a seamless shopping experience. The web app features a trading products homepage, a shopping page with categories, and an about page. Authentication is implemented using NextAuth.js for secure user access.### Responsive Design
-T-Shop is built with responsive design in mind.Feel free to explore the web app's functionalities and test its responsiveness on different devices. Your feedback is valuable in further improving the user experience.
+T-Shop is an e-commerce website built using Next.js, React, Redux, and JavaScript. It utilizes the Fake Store API to retrieve product data and provide a seamless shopping experience. The web app features a trading product homepage, shopping page with categories, and about page. Authentication was implemented using NextAuth.js to secure user access.### Responsive Design
+T-Shop is built with a responsive design in mind and feels free to explore the web app's functionalities and test its responsiveness on different devices. Your feedback is valuable for further improving the user experience.
+
+
 
 
 ## Technologies
-The T-Shop web app is built with the following technologies:
-- Next.js: A React framework for building server-rendered applications.
+The T-Shop web app was built using the following technologies:
+- Next.js: React Framework for Building Server-rendered Applications.
 - React: A popular JavaScript library for building user interfaces.
-- Redux: A predictable state container for managing application state.
+- Redux: A predictable state container for managing the application state.
 - JavaScript: The programming language used for the web app's logic.
-- Tailwind CSS: A utility-first CSS framework for styling the user interface.
+- Tailwind CSS: A utility-first CSS framework for styling user interfaces.
 - NextAuth.js: A flexible authentication library for Next.js applications.
 - Swiper: A mobile touch slider and framework for creating responsive carousels and sliders.
-- Fake Store API: An API used to retrieve product data for the e-commerce functionality.
-- Vercel: A cloud platform for deploying and hosting web applications.
+- Fake Store API: An API used to retrieve product data for e-commerce functionality.
+- Vercel: Cloud platform for deploying and hosting web applications.
+
 
 ## Usage
-Once you have the T-Shop web app running, you can explore the following functionalities:
-- Browse the trading products on the homepage.
-- Navigate to the shopping page and explore products by categories.
-- Learn more about the T-Shop project on the about page.
-- Sign in or create an account to access additional features.
+Once after visiting the T-Shop you can:
+- Browse trading products on the homepage.
+- Navigate to the shopping page and explore products by  category.
+- Learn more about the T-Shop project on the page.
+- Signs in or creates an account to access additional features.
+
 
 ## Deployment
-The T-Shop web app is deployed and hosted on Vercel. You can access it online by visiting the following URL:
+The T-Shop web app is deployed and hosted on Vercel. It can be accessed online by visiting the following URL:
 [https://online-shop-brown.vercel.app/](https://online-shop-brown.vercel.app/)
 
+
 ## Contact
-For any questions, feedback, or support related to the T-Shop web app, you can reach out to the project maintainer at fikii.business@gmail.com.
+For any questions, feedback, or support related to the T-Shop web app, you can reach the project maintainer at fikii.business@gmail.com.
