@@ -3,7 +3,7 @@ import Image from "next/image";
 import { React } from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 
-const SingIn = () => {
+const SignIn = () => {
   const btnStyle =
     "text-slate-100 text-xs   bg-rose-950 lg:m-1 lg:my-4 my-5 rounded-3xl px-2 py-1  hover:scale-105 ease-in duration-150";
   const { data } = useSession();
@@ -27,10 +27,10 @@ const SingIn = () => {
   ) : (
     <>
       <button className={btnStyle} onClick={signIn}>
-        SING IN
+        SIGN IN
       </button>
     </>
   );
 };
 
-export default SingIn;
+export default SignIn;

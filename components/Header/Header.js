@@ -4,10 +4,11 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { BsCartDashFill } from "react-icons/bs";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import SingIn from "../SingIn/SingIn";
+
 import Link from "next/link";
 import Cart from "../Cart/Cart";
 import { useSelector } from "react-redux";
+import SignIn from "../SignIn/Signin";
 
 const Header = () => {
   const [activeNav, setActiveNav] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
 
       <Navbar props={{ activeNav, activeNavHandler }} />
       <div className="flex h-16">
-        <SingIn />
+        <SignIn />
         <div className=" lg:flex p-2 relative items-center">
           <BsCartDashFill
             onClick={activeCartHandler}

@@ -38,7 +38,7 @@ const ProductCard = ({ product }) => {
           onClick={addToCardHadler}
           className=" w-16 border-solid  border-rose-900 bg-rose-100  text-rose-950 border-2  hover:scale-105 duration-200"
         >
-          Add in card
+       Add to cart
         </button>
         <Link
           className="border-solid h-full w-14 pt-2 border-rose-950 text-rose-100  bg-rose-950 border-2 text-center hover:scale-105 duration-200"
