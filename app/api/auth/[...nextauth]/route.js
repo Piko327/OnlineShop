@@ -18,7 +18,7 @@ export const authOptions = {
    ],
   callbacks: {
     async redirect({ url, baseUrl }) {
-      return "https://online-shop-mu-three.vercel.app/";
+      return "https://online-shop-mu-three.vercel.app";
     },
   },
 };
