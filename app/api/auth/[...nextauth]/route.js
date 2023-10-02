@@ -4,9 +4,16 @@ import GoogleProvider from "next-auth/providers/google";
 export const authOptions = {
   providers: [
     GoogleProvider({
-      clientId:process.env.GOOGLE_CLIENT_ID,
-      clientSecret:process.env.GOOGLE_CLIENT_SECRET,
-    }),
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code"
+        }
+      }
+    })
   //   FacebookProvider({
   //     clientId: process.env.FACEBOOK_CLIENT_ID,
   //     clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
@@ -18,7 +25,7 @@ export const authOptions = {
    ],
   callbacks: {
     async redirect({ url, baseUrl }) {
-      return "http:https://online-shop-mu-three.vercel.app//api/auth/callback/google";
+      return "https://online-shop-mu-three.vercel.app/";
     },
   },
 };
