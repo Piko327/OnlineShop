@@ -28,7 +28,7 @@ const Footer = () => {
         <ul className="text-gray-400 flex  text-sm flex-col gap-1" >
           <li>Men</li>
           <li>Women</li>
-          <li>Jewelery</li>
+          <li>Jewelry</li>
           <li>Electronic</li>
         </ul>
       </div>
