@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { React } from "react";
+import { React, useEffect } from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 const SignIn = () => {
@@ -20,13 +20,13 @@ const SignIn = () => {
         />
         <p className="text-center p-1  font-bold">{data.user.name}</p>
       </div>
-      <button className={btnStyle} onClick={signOut}>
+      <button className={btnStyle} onClick={() => signOut()}>
         LOGOUT
       </button>
     </>
   ) : (
     <>
-      <button className={btnStyle} onClick={signIn}>
+      <button className={btnStyle} onClick={() => signIn()}>
         SIGN IN
       </button>
     </>
