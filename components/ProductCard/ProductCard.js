@@ -23,7 +23,7 @@ const ProductCard = ({ product }) => {
         width={100}
         height={80}
         alt="p"
-        src={product.image}
+        src={product.images[0]}
         className="p-2 min-w-[70%] max-h-[50%] "
       />
       <h2 className="text-gray-900 font-bold leading-6 text-center flex ">

@@ -33,7 +33,7 @@ const DetailCard = ({ product }) => {
             height={200}
             alt="productImg"
             className="object-contain"
-            src={product.image}
+            src={product.images[0]}
           />
         </div>
         <div className="flex  w-2/3 flex-col gap-4 justify-center">
@@ -59,7 +59,6 @@ const DetailCard = ({ product }) => {
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
-            <span className="text-rose-950">{product.rating.count}</span>
           </div>
           <button
             onClick={addToCardHadler}
