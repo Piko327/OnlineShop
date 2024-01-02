@@ -6,18 +6,16 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const page = async (props) => {
-  const product = useSelector(state=>state.products.value)
-  .filter(p=>p.id==props.params.id)[0]
+    const product = useSelector(state => state.products.value)
+        .filter(p => p.id == props.params.id)[0]
 
+    return (<div>
+        <DetailCard product={product} />
 
+        <TrendingProducts />
+    </div>
 
-  return (<div>
-      <DetailCard product={product}/>
-
-      <TrendingProducts/>
-  </div>
-
-  );
+    );
 };
 
 export default page;
