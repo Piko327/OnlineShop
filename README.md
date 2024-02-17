@@ -35,7 +35,7 @@ Once after visiting the T-Shop you can:
 
 ## Deployment
 The T-Shop web app is deployed and hosted on Vercel. It can be accessed online by visiting the following URL:
-[https://online-shop-mu-three.vercel.app](https://online-shop-brown.vercel.app/)
+[https://online-shop-mu-three.vercel.app](https://online-shop-brown.vercel.app/),
 
 
 ## Contact
